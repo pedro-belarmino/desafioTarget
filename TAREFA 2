@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+    int i;
+
+    void verificar(char string[]){
+        
+        int contador = 0;
+        
+        for(i = 0; string[i] != '\0'; i++) {
+            if (string[i] == 'a' || string[i] == 'A'){
+                contador++;
+            }
+        }
+        
+        if (contador > 0){
+            printf("Foi encontrada a letra A %d vez(es)", contador);
+            
+        } else {
+            printf("Não foi encontrada nenhuma letra A");
+        }
+        
+    }
+    
+    int main(){
+        char texto[100];
+        
+        printf("Digite seu texto: ");
+        fgets(texto, sizeof(texto), stdin);
+        
+        verificar(texto);
+        
+        return 0;
+    }
+    
+    
