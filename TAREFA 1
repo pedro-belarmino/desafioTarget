@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    int primeiroN = 0;
+    int segundoN = 1;
+    int escolha;
+    int validar = 0;
+    
+    int proximoN = primeiroN + segundoN;
+    
+    printf("Digite seu numero: ");
+    scanf("%d", &escolha);
+    
+    printf("Sequencia de fibonacci: %d, %d, ", primeiroN, segundoN);
+    
+    for (i = 3; i <= 15; i++){
+        printf("%d, ", proximoN);
+        
+        if (escolha == primeiroN || escolha == segundoN){
+        validar = 1;
+    }
+    
+        primeiroN = segundoN;
+        segundoN = proximoN;
+        
+        proximoN = primeiroN + segundoN;
+    }
+    
+    if(validar == 1){
+        printf("\n Seu numero faz parte de fibonacci");
+    } else {
+        printf("\n Seu numero não faz parte de fibonacci");
+    }
+    
+    return 0;
+}
