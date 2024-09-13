@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+
+    float fatSP = 67836.43;
+    float fatRJ = 36678.66;
+    float fatMG = 29229.88;
+    float fatES = 27165.48;
+    float fatOutros = 19849.53;
+    
+    float fatTotal = fatOutros + fatES + fatMG + fatRJ + fatSP;
+    
+    float percSP = (fatSP / fatTotal) * 100;
+    float percRJ = (fatRJ / fatTotal) * 100;
+    float percMG = (fatMG / fatTotal) * 100;
+    float percES = (fatES / fatTotal) * 100;
+    float percOutros = (fatOutros / fatTotal) * 100;
+    
+    printf("Percentual de representação de cada estado: \n");
+    printf("São Paulo: %.2f%%\n", percSP);
+    printf("Rio de Janeiro: %.2f%%\n", percRJ);
+    printf("Minas Gerais: %.2f%%\n", percMG);
+    printf("Espírito Santo: %.2f%%\n", percES);
+    printf("Outros Estados: %.2f%%\n", percOutros);
+
+    return 0;
+}
