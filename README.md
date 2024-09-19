@@ -1,5 +1,5 @@
 ENG
-I participated in a selective project where I had to complete several programming logic challenges. I chose to use the C language to solve these challenges, as I study programming logic with this language in my college.
+I participated in a selective project where I had to complete several logic programming challenges. I chose to use the C language to solve these challenges, as I study programming logic with this language in my college.
 
 The first challenge, named "TAREFA1," consisted of checking whether the number entered by the user is part of the first 15 numbers of the Fibonacci sequence. 
 
